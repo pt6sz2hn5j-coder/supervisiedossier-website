@@ -66,8 +66,10 @@ section.alt{background:var(--paper2)}
 .step h3{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3.2vw,40px);margin:8px 0 14px;letter-spacing:-0.01em}
 .step p{margin:0;font-size:18px;max-width:30em}
 .step .vis{display:flex;justify-content:center}
-.stepicon{width:100%;max-width:420px;aspect-ratio:4/3;border-radius:28px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center}
-.stepicon svg{width:58%;height:auto}
+.step .numrow{display:flex;align-items:center;gap:18px}
+.stepicon{width:64px;height:64px;flex:none;border-radius:18px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center}
+.stepicon svg{width:62%;height:auto}
+@media(min-width:900px){.step{grid-template-columns:minmax(0,1fr) minmax(0,1.5fr)}.step:has(>.vis:first-child){grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)}}
 figure.shotfig{margin:0}
 figure.shotfig img{display:block;width:100%;border-radius:16px;box-shadow:0 24px 48px -20px oklch(0.25 0.05 60 / .45)}
 figure.shotfig.missing{display:none}
